@@ -1,0 +1,19 @@
+<div class="placement" [class.placement--light]="theme() === 'light'">
+  <div #host class="placement__viewport">
+    <canvas #canvas class="placement__canvas"></canvas>
+  </div>
+
+  @if (showStats()) {
+    <div class="placement__stats">
+      <span>{{ stats().dimensions }}</span>
+      <i></i>
+      <span>{{ stats().count }} paket</span>
+      <i></i>
+      <span>%{{ stats().fillPercent }} doluluk</span>
+      @if (stats().weightKg > 0) {
+        <i></i>
+        <span>{{ stats().weightKg }} kg</span>
+      }
+    </div>
+  }
+</div>

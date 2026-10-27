@@ -1,0 +1,19 @@
+/* Global stiller: bileşen kendi stilini kendi içinde taşır (kopyalanabilir olması için). */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #070a0e;
+  color: #e6edf6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

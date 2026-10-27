@@ -1,0 +1,13 @@
+<main class="shell">
+  <header class="shell__bar">
+    <div class="shell__heading">
+      <p class="shell__eyebrow">Yerleştirme sonucu · 3D önizleme</p>
+      <h1 class="shell__title">{{ vehicle.label }}</h1>
+    </div>
+    <p class="shell__hint">Sürükle: döndür · Tekerlek: yakınlaştır</p>
+  </header>
+
+  <section class="shell__stage">
+    <placement-3d-view [vehicle]="vehicle" [boxes]="boxes" />
+  </section>
+</main>
